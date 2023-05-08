@@ -11,6 +11,7 @@ USGS_API_URL = os.getenv(
 
 def get_earthquake_data(start_time, end_time, min_magnitude, order_by, query_url):
     # Fetch the data from the USGS API or cache
+    
     data = fetch_earthquake_data(start_time, end_time, min_magnitude, order_by)
     # Save the data to the database only if it's not present in the cache
     if data['from_cache'] == False:
@@ -19,7 +20,6 @@ def get_earthquake_data(start_time, end_time, min_magnitude, order_by, query_url
     return data
 
 def fetch_earthquake_data(start_time, end_time, min_magnitude, order_by):
-
     cache_key = f"earthquake_data:{start_time}:{end_time}:{min_magnitude}:{order_by}"
     print('cache_key: ', cache_key) # TODO: improve this to use a better logging system
     data = cache.get(cache_key)
