@@ -110,6 +110,7 @@ To test the API services, we have provided a Postman collection. You can import 
 
 Open Postman and click on the Import button in the top-left corner of the window.
 Select the Import From Link option, and paste the following link: https://raw.githubusercontent.com/oteroleonardogh/earthquake-challenge-api/main/postman-collection.json
+
 Click the Import button, and the collection will be added to your Postman workspace.
 Once you have imported the collection, you can test each of the API services by selecting the appropriate request from the collection and clicking the Send button. Make sure to replace any placeholders in the request URL or request body with your own values.
 
