@@ -44,9 +44,9 @@ def nearest_earthquake_to_city(request, city, start_time, end_time, min_magnitud
         place = closest_earthquake['properties']['place']
         time = closest_earthquake['properties']['time']
         time_str = datetime.fromtimestamp(time / 1000).strftime('%Y-%m-%d %H:%M:%S')
-        result = f'The closest earthquake to {city} was a M {mag} - {place} on {time_str}'
+        message = f'The closest earthquake to {city} was a M {mag} - {place} on {time_str}'
     else:
-        result = f'No earthquakes found near {city}'
+        message = f'No earthquakes found near {city}'
 
-    response = {'result': result}
+    response = {'message': message}
     return JsonResponse(response)
