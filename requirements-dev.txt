@@ -1,0 +1,2 @@
+-r requirements.txt
+hupper==1.12

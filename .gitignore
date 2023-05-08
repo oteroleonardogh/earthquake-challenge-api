@@ -1,0 +1,42 @@
+# Ignore these files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.bak
+*.tmp
+*.log
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+ehthumbs.db
+Thumbs.db
+
+# Ignore these directories
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Ignore .env files for production and staging
+.env.production
+.env.staging
+
+# Ignore local settings file
+local_settings.py
+
+# Ignore any compiled Python bytecode
+*.pyc
+
+# Ignore secret keys and other sensitive information
+*.key
+*.pem
+*.db
+*.sqlite3
+
+# Ignore test settings file
+test_settings.py
