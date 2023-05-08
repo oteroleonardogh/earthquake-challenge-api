@@ -48,6 +48,38 @@
 						"description": "This endpoint returns a list of earthquakes with a magnitude greater than or equal to 4.5 between the specified start and end dates."
 					},
 					"response": []
+				},
+				{
+					"name": "Get Nearest Earthquake",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/nearest_earthquake/Los_Angeles/2021-06-01/2021-07-05/5.0/time/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"nearest_earthquake",
+								"Los_Angeles",
+								"2021-06-01",
+								"2021-07-05",
+								"5.0",
+								"time",
+								""
+							]
+						},
+						"description": "This endpoint returns a list of earthquakes with a magnitude greater than or equal to 4.5 between the specified start and end dates."
+					},
+					"response": []
 				}
 			]
 		},
@@ -66,7 +98,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"New York City\",\n    \"country\": \"USA\",\n    \"latitude\": 12.9715987,\n    \"longitude\": 77.5945627,    \n    \"population\": 8399000\n}"
+							"raw": "{\n    \"name\": \"Los Angeles, CA\",\n    \"country\": \"USA\",\n    \"latitude\": 34.0522,\n    \"longitude\": -118.2437,\n    \"population\": 3849000\n}"
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/api/cities/",

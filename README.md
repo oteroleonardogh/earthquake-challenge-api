@@ -120,7 +120,7 @@ Note: If you are running the API locally, make sure to update the base URL in ea
 
 Before using the **nearest_earthquake** endpoint, you need to create a city object by calling the **POST /api/cities** endpoint. Here's an example using the Postman collection:
 
-1. Open Postman and import the **postman_collection.json** file.
+1. Open Postman and import the **postman-collection.json** file.
 2. In the collection, locate the Create City request and click Send.
 3. Now, you can use the **nearest_earthquake** endpoint to get the closest earthquake to the city you just created by calling the **GET /api/nearest_earthquake/{city_id}/{start_time}/{end_time}/{min_magnitude}/** endpoint.
 
