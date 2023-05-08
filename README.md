@@ -104,6 +104,17 @@ docker-compose up --force-recreate --build
 
 This will build the API service container and start the three containers defined in the docker-compose.yml file.
 
+## Testing the Services using Postman
+
+To test the API services, we have provided a Postman collection. You can import this collection by following these steps:
+
+Open Postman and click on the Import button in the top-left corner of the window.
+Select the Import From Link option, and paste the following link: https://raw.githubusercontent.com/oteroleonardogh>/earthquake-challenge-api/main/postman-collection.json
+Click the Import button, and the collection will be added to your Postman workspace.
+Once you have imported the collection, you can test each of the API services by selecting the appropriate request from the collection and clicking the Send button. Make sure to replace any placeholders in the request URL or request body with your own values.
+
+Note: If you are running the API locally, make sure to update the base URL in each request to http://localhost:8000.
+
 ## Conclusion
 
 This project is built using the following libraries and frameworks:
