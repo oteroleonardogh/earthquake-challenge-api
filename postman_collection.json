@@ -50,7 +50,7 @@
 					"response": []
 				},
 				{
-					"name": "v",
+					"name": "Get Nearest Earthquake",
 					"request": {
 						"method": "GET",
 						"header": [
