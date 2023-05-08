@@ -109,7 +109,7 @@ This will build the API service container and start the three containers defined
 To test the API services, we have provided a Postman collection. You can import this collection by following these steps:
 
 Open Postman and click on the Import button in the top-left corner of the window.
-Select the Import From Link option, and paste the following link: https://raw.githubusercontent.com/oteroleonardogh>/earthquake-challenge-api/main/postman-collection.json
+Select the Import From Link option, and paste the following link: https://raw.githubusercontent.com/oteroleonardogh/earthquake-challenge-api/main/postman-collection.json
 Click the Import button, and the collection will be added to your Postman workspace.
 Once you have imported the collection, you can test each of the API services by selecting the appropriate request from the collection and clicking the Send button. Make sure to replace any placeholders in the request URL or request body with your own values.
 
@@ -134,4 +134,4 @@ In general, the decision-making for choosing these libraries and frameworks was 
 - Community support: The library or framework should have an active community with frequent updates and bug fixes.
 - Performance: The library or framework should be performant and not introduce significant overhead or latency.
 
-In conclusion, this project provides a boilerplate for building a RESTful API with Django, Django REST framework, and PostgreSQL. The project includes testing and Docker functionality to ensure that code quality is maintained and that the API can be easily deployed
+In conclusion, this project provides a boilerplate for building a RESTful API with Django, Django REST framework, PostgreSQL, Redis, MagicMock. The project includes testing and Docker functionality to ensure that code quality is maintained and that the API can be easily deployed
