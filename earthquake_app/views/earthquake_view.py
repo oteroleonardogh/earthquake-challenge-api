@@ -9,22 +9,6 @@ from datetime import datetime
 from ..models.city_model import City
 from ..services.earthquake_service import get_earthquake_data
 
-# # TODO: change this to dynamically obtain latitude and longitude values for the cities
-# cities = {
-#     'Los Angeles, CA': {
-#         'latitude': 34.0522,
-#         'longitude': -118.2437
-#     },
-#     'San Francisco, CA': {
-#         'latitude': 37.7749,
-#         'longitude': -122.4194
-#     },
-#     'Tokyo, Japan': {
-#         'latitude': 35.6762,
-#         'longitude': 139.6503
-#     }
-# }
-
 def get_earthquakes(request, start_time, end_time, min_magnitude, order_by='-time'):
     query_url = request.build_absolute_uri()
     data = get_earthquake_data(start_time, end_time, min_magnitude, order_by, query_url)
