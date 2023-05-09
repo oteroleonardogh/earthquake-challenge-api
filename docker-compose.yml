@@ -5,9 +5,9 @@ services:
     image: postgres:13
     restart: always
     ports:
-      - ${PGPORT}:${PGPORT}   #default PostgreSQL port 
+      - "${PGPORT}:${PGPORT}"
     env_file:
-      - .env  #fallback environment variables file 
+      - .env
     volumes:
       - pgdata:/var/lib/postgresql/data
 
@@ -18,11 +18,11 @@ services:
     ports:
       - "${REDIS_PORT}:${REDIS_PORT}"
     env_file:
-      - .env  #fallback environment variables file 
+      - .env
 
   api:
     build: .
-    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:${API_PORT}"
+    command: sh -c 'python manage.py migrate && python manage.py runserver 0.0.0.0:${API_PORT}'
     volumes:
       - .:/code
     ports:
@@ -35,4 +35,3 @@ services:
 
 volumes:
   pgdata:
-
